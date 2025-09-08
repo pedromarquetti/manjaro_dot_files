@@ -1,0 +1,208 @@
+[
+	{
+		"key": "ctrl+f1",
+		"command": "workbench.action.showCommands"
+	},
+	{
+		"key": "f1",
+		"command": "-workbench.action.showCommands"
+	},
+	{
+		"key": "f1",
+		"command": "code-runner.run"
+	},
+	{
+		"key": "ctrl+alt+n",
+		"command": "-code-runner.run"
+	},
+	{
+		"key": "alt+'",
+		"command": "workbench.action.terminal.newInActiveWorkspace"
+	},
+	{
+		"key": "ctrl+=",
+		"command": "editor.action.fontZoomIn"
+	},
+	{
+		"key": "ctrl+-",
+		"command": "editor.action.fontZoomOut"
+	},
+	{
+		"key": "ctrl+m ctrl+t",
+		"command": "workbench.action.terminal.moveToEditor"
+	},
+	{
+		"key": "ctrl+alt+s",
+		"command": "workbench.action.saveWorkspaceAs"
+	},
+	{
+		"key": "ctrl+l ctrl+c",
+		"command": "editor.action.transformToLowercase"
+	},
+	{
+		"key": "ctrl+u ctrl+c",
+		"command": "editor.action.transformToUppercase"
+	},
+	{
+		"key": "ctrl+alt+w",
+		"command": "workbench.action.closePanel"
+	},
+	{
+		"key": "ctrl+e",
+		"command": "-workbench.action.quickOpen"
+	},
+	{
+		"key": "ctrl+e",
+		"command": "workbench.view.explorer",
+		"when": "viewContainer.workbench.view.explorer.enabled"
+	},
+	{
+		"key": "ctrl+shift+e",
+		"command": "-workbench.view.explorer",
+		"when": "viewContainer.workbench.view.explorer.enabled"
+	},
+	{
+		"key": "ctrl+n",
+		"command": "-workbench.action.files.newUntitledFile"
+	},
+	{
+		"key": "ctrl+n",
+		"command": "explorer.newFile"
+	},
+	{
+		"key": "ctrl+k ctrl+o",
+		"command": "-workbench.action.files.openFolder",
+		"when": "openFolderWorkspaceSupport"
+	},
+	{
+		"key": "ctrl+k ctrl+o",
+		"command": "editor.foldAll",
+		"when": "editorTextFocus && foldingEnabled"
+	},
+	{
+		"key": "ctrl+k ctrl+0",
+		"command": "-editor.foldAll",
+		"when": "editorTextFocus && foldingEnabled"
+	},
+	{
+		"key": "ctrl+enter",
+		"command": "-r.runSelection",
+		"when": "editorTextFocus && editorLangId == 'r'"
+	},
+	{
+		"key": "ctrl+enter",
+		"command": "-breadcrumbs.revealFocused",
+		"when": "breadcrumbsActive && breadcrumbsVisible"
+	},
+	{
+		"key": "ctrl+enter",
+		"command": "-r.runSelection",
+		"when": "editorTextFocus && editorLangId == 'rmd'"
+	},
+	{
+		"key": "ctrl+alt+shift+f",
+		"command": "workbench.action.findInFiles"
+	},
+	{
+		"key": "ctrl+shift+f",
+		"command": "explorer.newFolder"
+	},
+	{
+		"key": "ctrl+shift+f",
+		"command": "-workbench.action.findInFiles"
+	},
+	{
+		"key": "ctrl+shift+space",
+		"command": "editor.action.triggerParameterHints",
+		"when": "editorHasSignatureHelpProvider && editorTextFocus"
+	},
+	{
+		"key": "ctrl+shift+space",
+		"command": "-editor.action.triggerParameterHints",
+		"when": "editorHasSignatureHelpProvider && editorTextFocus"
+	},
+	{
+		"key": "ctrl+f ctrl+o",
+		"command": "workbench.action.files.openFolderViaWorkspace",
+		"when": "!openFolderWorkspaceSupport && workbenchState == 'workspace'"
+	},
+	{
+		"key": "ctrl+o",
+		"command": "-workbench.action.files.openFolderViaWorkspace",
+		"when": "!openFolderWorkspaceSupport && workbenchState == 'workspace'"
+	},
+	{
+		"key": "ctrl+alt+=",
+		"command": "workbench.action.zoomIn"
+	},
+	{
+		"key": "ctrl+=",
+		"command": "-workbench.action.zoomIn"
+	},
+	{
+		"key": "ctrl+alt+[Minus]",
+		"command": "workbench.action.zoomOut"
+	},
+	{
+		"key": "ctrl+-",
+		"command": "-workbench.action.zoomOut"
+	},
+	{
+		"key": "ctrl+enter",
+		"command": "-github.copilot.generate",
+		"when": "editorTextFocus && github.copilot.activated && !inInteractiveInput && !interactiveEditorFocused"
+	},
+	{
+		"key": "ctrl+capslock",
+		"command": "workbench.action.openQuickChat.copilot"
+	},
+	{
+		"key": "ctrl+enter",
+		"command": "-github.copilot.generate",
+		"when": "editorTextFocus && github.copilot.activated && !commentEditorFocused && !inInteractiveInput && !interactiveEditorFocused"
+	},
+	{
+		"key": "ctrl+shift+i",
+		"command": "references-view.findImplementations"
+	},
+	{
+		"key": "alt+\\",
+		"command": "github.copilot.interactiveEditor.generate"
+	},
+	{
+		"key": "ctrl+alt+right",
+		"command": "-workbench.action.moveEditorToNextGroup"
+	},
+	{
+		"key": "ctrl+alt+down",
+		"command": "workbench.action.splitEditorDown"
+	},
+	{
+		"key": "ctrl+k ctrl+\\",
+		"command": "-workbench.action.splitEditorDown"
+	},
+	{
+		"key": "ctrl+alt+left",
+		"command": "workbench.action.splitEditorLeft"
+	},
+	{
+		"key": "ctrl+k ctrl+\\",
+		"command": "-workbench.action.splitEditorLeft"
+	},
+	{
+		"key": "ctrl+alt+right",
+		"command": "workbench.action.splitEditorRight"
+	},
+	{
+		"key": "ctrl+k ctrl+\\",
+		"command": "-workbench.action.splitEditorRight"
+	},
+	{
+		"key": "ctrl+alt+up",
+		"command": "workbench.action.splitEditorUp"
+	},
+	{
+		"key": "ctrl+k ctrl+\\",
+		"command": "-workbench.action.splitEditorUp"
+	}
+]

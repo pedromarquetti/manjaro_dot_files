@@ -1,0 +1,51 @@
+{
+	"New Function": {
+		"description": "Creates new function",
+		"body": ["fn $1($2)-> $3{", "\t$0", "}"],
+		"prefix": "fn"
+	},
+	"Elif statement": {
+		"description": "Creates if statement with 'else if'",
+		"body": [
+			"if $1 {",
+			"\t$2",
+			"} else if $3 {",
+			"\t$4",
+			"} else {",
+			"\t$0",
+			"}"
+		],
+		"prefix": "elif"
+	},
+	"if else statement": {
+		"description": "Creates if statement with 'else'",
+		"body": ["if $1 {", "\t$2", "} else {", "\t$0", "}"],
+		"prefix": "if"
+	},
+	"Struct": {
+		"description": "Simple struct {} generator",
+		"body": ["struct $1 {", "\t$2:$3,", "\t$0", "}"],
+		"prefix": "str"
+	},
+	"Derive Generator": {
+		"body": "#[derive($0)]",
+		"prefix": "derive",
+		"description": "helper for writing derives because i'm lazy"
+	},
+	"pub async fn": {
+		"prefix": "pafn",
+		"body": ["pub async fn $1($2) -> $3 {", "\t$0", "}"],
+		"description": "async function"
+	},
+	// async fn snippet
+	"Async fn": {
+		"prefix": "asfn",
+		"body": ["async fn $1($2) -> $3 {", "\t$0", "}"],
+		"description": "async function"
+	},
+	"Add struct Field": {
+		"prefix": "stri",
+		"body": "$3 $1:$2,\n$0",
+		"description": "Adds new struct field"
+	}
+}

@@ -1,0 +1,19 @@
+{
+	"Function definition": {
+		"prefix": "fn",
+		"body": ["def $1($2):", "\t$0"]
+	},
+	"if name is main ": {
+		"prefix": "ifnm",
+		"body": ["if __name__ == '__main__':", "\t$0"]
+	},
+	"if name is main, else ": {
+		"prefix": "ifnme",
+		"body": ["if __name__ == '__main__':", "\t$1", "else:", "\t$0"]
+	},
+	"If statement": {
+		"prefix": "if",
+		"body": ["if $1:", "\t$0"],
+		"description": "basic if statement"
+	}
+}

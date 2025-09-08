@@ -1,0 +1,44 @@
+{
+  "name": "my-snippets",
+  "contributes": {
+    "snippets": [
+      {
+        "language": [
+          "go"
+        ],
+        "path": "./go.json"
+      },
+      {
+        "language": [
+          "c"
+        ],
+        "path": "./c.json"
+      },
+      {
+        "language": [
+          "cpp"
+        ],
+        "path": "./cpp.json"
+      },
+      {
+        "language": [
+          "python"
+        ],
+        "path": "./python.json"
+      },
+      {
+        "language": [
+          "rust"
+        ],
+        "path": "./rust.json"
+      },
+      {
+        "language": [
+          "sh",
+          "shell"
+        ],
+        "path": "./shellscript.json"
+      }
+    ]
+  }
+}
