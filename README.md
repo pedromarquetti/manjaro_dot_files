@@ -20,13 +20,13 @@ I'll always be adding more stuff
 ### For an automated setup just run:
 
 ```
-curl -L https://raw.githubusercontent.com/pedromarquetti/cfg_files/master/.local/bin/setup.sh | bash
+curl -L https://raw.githubusercontent.com/pedromarquetti/manjaro_dot_files/master/.local/bin/setup.sh | bash
 ```
 
 ### For non-root users (you have to run the above first)
 
 ```
-curl -L https://raw.githubusercontent.com/pedromarquetti/cfg_files/master/.local/bin/setup_noroot.sh | bash
+curl -L https://raw.githubusercontent.com/pedromarquetti/manjaro_dot_files/master/.local/bin/setup_noroot.sh | bash
 ```
 
 ### Gnome Extensions
@@ -37,13 +37,13 @@ gnome ext.
 ### Setup NVIM
 
 ```
-curl -L https://raw.githubusercontent.com/pedromarquetti/cfg_files/master/.local/bin/setup_nvim.sh | bash
+curl -L https://raw.githubusercontent.com/pedromarquetti/manjaro_dot_files/master/.local/bin/setup_nvim.sh | bash
 ```
 
 ### Or you could do it manually
 
 ```
-git clone https://github.com/pedromarquetti/cfg_files.git
+git clone https://github.com/pedromarquetti/manjaro_dot_files.git
 # mv cfg_files/<file/dir> ~
 ```
 
