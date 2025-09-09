@@ -33,7 +33,7 @@ print_cyan () {
 setup_git(){
     [[ -f /usr/bin/git || -f /bin/git ]] ||
         print_red "git not found! installing" 
-        pacman -S git
+        sudo pacman -S git
 }
 
 install_zsh(){
@@ -135,7 +135,7 @@ main(){
     cd ~ || exit
     print_cyan "Hi $(whoami), how are you?"
     print_cyan "Let's update everything first..."
-    pacman -Syu --noconfirm wget curl make python3 yay git base-devel lbzip2 bzip2 
+    sudo pacman -Syu --noconfirm wget curl make python3 yay git base-devel lbzip2 bzip2 
     print_cyan "Let's install git first"
     setup_git &&
     print_green "git installed"
