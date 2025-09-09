@@ -33,7 +33,7 @@ print_cyan () {
 setup_git(){
     [[ -f /usr/bin/git || -f /bin/git ]] ||
         print_red "git not found! installing" 
-        sudo apt install git -y
+        pacman -S git
 }
 
 install_zsh(){
@@ -92,9 +92,6 @@ function install_misc(){
 
     print_cyan "Installing CLI spotify client..."
 
-    sudo apt install libssl-dev libasound2-dev libdbus-1-dev
-    sudo pacman -Syu openssl libdbus
-
     if [[ ! -x /bin/cargo ]]; then
         setup_rust
     fi
@@ -110,20 +107,6 @@ setup_rust() {
     print_green "setting up rust"
     curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y
 }
-
-function setup_postgres(){
-    sudo apt install -y postgresql postgresql-contrib libpq-dev &&
-    sudo -u postgres psql -c "ALTER USER postgres PASSWORD 'postgres';" &&
-    sudo -u postgres psql -c "CREATE DATABASE dev;" &&
-    sudo -u postgres psql -c "CREATE ROLE dev PASSWORD 'dev' NOSUPERUSER CREATEDB CREATEROLE INHERIT LOGIN;" &&
-    sudo -u postgres psql -c "GRANT ALL PRIVILEGES ON DATABASE dev TO dev;" &&
-    # changing pg_hba.conf to allow password auth
-    sudo sed -i 's/peer/md5/g' /etc/postgresql/14/main/pg_hba.conf &&
-
-    sudo systemctl enable postgresql &&
-    sudo systemctl start postgresql
-}
-
 
 install_nodemanager() {
     print_cyan "checking if Fast Node Manager is installed!"
@@ -173,9 +156,6 @@ main(){
     print_cyan "installing misc. stuff"
     install_misc &&
     print_green "misc. stuff installed"
-    print_cyan "setting up postgres"    
-    setup_postgres &&
-    print_green "postgres setup done!"
     print_green "setting up Node Manager" &&
     install_nodemanager && 
     print_red "----------"
