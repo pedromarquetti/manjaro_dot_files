@@ -135,7 +135,8 @@ main(){
     cd ~ || exit
     print_cyan "Hi $(whoami), how are you?"
     print_cyan "Let's update everything first..."
-    sudo pacman -Syu --noconfirm wget curl make python3 yay git base-devel lbzip2 bzip2 
+    print_red "pay attention, pacman might ask to overwrite some packages!"
+    sudo pacman -Syu  wget curl make python3 yay git base-devel lbzip2 bzip2 
     print_cyan "Let's install git first"
     setup_git &&
     print_green "git installed"
