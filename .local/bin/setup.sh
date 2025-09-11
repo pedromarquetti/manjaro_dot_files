@@ -135,8 +135,11 @@ main(){
     cd ~ || exit
     print_cyan "Hi $(whoami), how are you?"
     print_cyan "Let's update everything first..."
-    print_red "pay attention, pacman might ask to overwrite some packages!"
+    print_red "pacman might break because of packages to overwrite, if it does, stop the script and run sudo pacman -Syu manually!"
+    sudo pacman -Syu yay # i know i put 'yay' in the line below, but pacman was not installing it 
     sudo pacman -Syu  wget curl make python3 yay git base-devel lbzip2 bzip2 
+    print_cyan "waiting if user wants to exit or not"
+    sleep 10
     print_cyan "Let's install git first"
     setup_git &&
     print_green "git installed"
@@ -166,7 +169,7 @@ main(){
     print_green "ok, continuing..."
     setup_env &&
     print_cyan "ok, getting my config files"
-    git clone --bare https://github.com/pedromarquetti/cfg_files.git "$HOME"/.cfg && 
+    git clone --bare https://github.com/pedromarquetti/manjaro_dot_files.git "$HOME"/.cfg && 
 
     print_green "Done, Running checkout"
 
