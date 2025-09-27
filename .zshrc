@@ -24,6 +24,15 @@ if [[ ! -d ~/.config/zsh/completions/ ]]; then
     mkdir ~/.config/zsh/completions/
 fi
 
+# source .env on cd
+chpwd() {
+        if [[ -f ./.env ]]; then
+            source ./.env
+            echo "Sourced .env in $PWD"
+        fi
+}
+
+
 fpath=(~/.config/zsh/completions/ $fpath)
 
 # Check if Git dir exists
@@ -260,6 +269,7 @@ alias py='python3'
 alias pip3update="pip freeze --user | cut -d'=' -f1 | xargs -n1 pip install -U"
 alias pingg='ping -c 10'             # ping limiter
 alias mkdir='mkdir -p '
+alias code='vscodium '
 
 # dotfile commands
 alias config="/usr/bin/git --git-dir=$HOME/.cfg --work-tree=$HOME" 
@@ -276,9 +286,4 @@ if [ -d "$FNM_PATH" ]; then
   eval "`fnm env --use-on-cd --version-file-strategy=recursive  --shell zsh`"
 fi
 
-# fnm
-FNM_PATH="/home/teste/.local/share/fnm"
-if [ -d "$FNM_PATH" ]; then
-  export PATH="$FNM_PATH:$PATH"
-  eval "`fnm env`"
-fi
+
