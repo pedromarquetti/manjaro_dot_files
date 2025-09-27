@@ -1,3 +1,6 @@
+[Keyboard]
+RepeatDelay=350
+
 [Mouse]
 X11LibInputXAccelProfileFlat=true
 cursorSize=48

@@ -1,10 +1,33 @@
+[Activities][LastVirtualDesktop]
+1c7a1160-b699-45c4-95ed-eec98969b826=aa451bea-41d5-48b4-a6b2-ffc9bed1a8c8
+
 [Desktops]
 Id_1=aa451bea-41d5-48b4-a6b2-ffc9bed1a8c8
-Id_2=f619af7d-f845-41a4-8eae-adfd5b80e2e4
+Id_2=b51bdbab-2931-4a1f-9605-2e6e29898e41
+Id_3=cba3d9e3-9e96-405d-abca-9035445350dd
+Id_4=d50991c5-f56d-40eb-85a3-aa7047101557
+Name_1=main
+Name_2=spotify
+Name_3=Desktop 2
+Name_4=Desktop 3
+Number=4
 Rows=2
+
+[Plugins]
+desktopchangeosdEnabled=true
+
+[Script-desktopchangeosd]
+PopupHideDelay=300
+
+[TabBox]
+ApplicationsMode=1
+OrderMinimizedMode=1
 
 [Tiling]
 padding=4
 
 [Tiling][285712a6-31d1-5e3a-95e8-b6f4629caf9f]
+tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"width":0.25}]}
+
+[Tiling][ffb00e91-83c6-585d-843a-9795f5c1adfe]
 tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"width":0.25}]}

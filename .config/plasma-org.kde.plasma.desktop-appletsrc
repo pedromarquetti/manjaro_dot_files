@@ -4,20 +4,6 @@ RightButton;NoModifier=org.kde.contextmenu
 [ActionPlugins][1]
 RightButton;NoModifier=org.kde.contextmenu
 
-[Containments][1]
-ItemGeometries-1920x1080=
-ItemGeometriesHorizontal=
-activityId=bc02507b-7a69-4a37-a404-aa03c8690946
-formfactor=0
-immutability=1
-lastScreen=0
-location=0
-plugin=org.kde.plasma.folder
-wallpaperplugin=org.kde.image
-
-[Containments][1][General]
-positions={"1920x1080":[],"1920x902":[]}
-
 [Containments][2]
 activityId=
 formfactor=2
@@ -40,8 +26,8 @@ plugin=org.kde.plasma.kickoff
 
 [Containments][2][Applets][3][Configuration]
 PreloadWeight=100
-popupHeight=515
-popupWidth=709
+popupHeight=670
+popupWidth=883
 
 [Containments][2][Applets][3][Configuration][General]
 favorites=preferred://browser,org.kde.dolphin.desktop,org.kde.elisa.desktop,org.kde.konsole.desktop,org.manjaro.pamac.manager.desktop,systemsettings.desktop
@@ -55,7 +41,7 @@ immutability=1
 plugin=org.kde.plasma.icontasks
 
 [Containments][2][Applets][4][Configuration][General]
-launchers=preferred://filemanager,applications:org.kde.konsole.desktop,preferred://browser,applications:org.manjaro.pamac.manager.desktop
+launchers=applications:org.kde.konsole.desktop,applications:firefox.desktop,preferred://filemanager
 
 [Containments][2][Applets][5]
 immutability=1
@@ -74,10 +60,29 @@ immutability=1
 plugin=org.kde.plasma.systemtray
 
 [Containments][2][Applets][8][Configuration]
+PreloadWeight=65
 SystrayContainmentId=9
 
 [Containments][2][General]
 AppletOrder=3;4;5;6;7;8;21
+
+[Containments][22]
+ItemGeometries-1536x864=
+ItemGeometriesHorizontal=
+activityId=1c7a1160-b699-45c4-95ed-eec98969b826
+formfactor=0
+immutability=1
+lastScreen=0
+location=0
+plugin=org.kde.plasma.folder
+wallpaperplugin=org.kde.image
+
+[Containments][22][General]
+positions={"1536x864":[]}
+
+[Containments][22][Wallpaper][org.kde.image][General]
+Image=/usr/share/wallpapers/Bamboo at Night/
+SlidePaths=/usr/share/wallpapers/
 
 [Containments][9]
 activityId=
@@ -86,6 +91,8 @@ immutability=1
 lastScreen=0
 location=4
 plugin=org.kde.plasma.private.systemtray
+popupHeight=440
+popupWidth=440
 wallpaperplugin=org.kde.image
 
 [Containments][9][Applets][10]
@@ -108,6 +115,9 @@ plugin=org.kde.plasma.clipboard
 immutability=1
 plugin=org.kde.plasma.devicenotifier
 
+[Containments][9][Applets][14][Configuration]
+PreloadWeight=55
+
 [Containments][9][Applets][15]
 immutability=1
 plugin=org.kde.plasma.keyboardindicator
@@ -124,6 +134,9 @@ plugin=org.kde.plasma.manage-inputmethod
 immutability=1
 plugin=org.kde.plasma.notifications
 
+[Containments][9][Applets][18][Configuration]
+PreloadWeight=55
+
 [Containments][9][Applets][19]
 immutability=1
 plugin=org.kde.plasma.printmanager
@@ -131,6 +144,9 @@ plugin=org.kde.plasma.printmanager
 [Containments][9][Applets][20]
 immutability=1
 plugin=org.kde.plasma.volume
+
+[Containments][9][Applets][20][Configuration]
+PreloadWeight=55
 
 [Containments][9][Applets][20][Configuration][General]
 migrated=true
@@ -146,6 +162,16 @@ plugin=org.kde.plasma.battery
 [Containments][9][Applets][24]
 immutability=1
 plugin=org.kde.plasma.networkmanagement
+
+[Containments][9][Applets][24][Configuration]
+PreloadWeight=55
+
+[Containments][9][Applets][25]
+immutability=1
+plugin=org.kde.plasma.mediacontroller
+
+[Containments][9][Applets][25][Configuration]
+PreloadWeight=26
 
 [Containments][9][General]
 extraItems=org.kde.kdeconnect,org.kde.kscreen,org.kde.plasma.battery,org.kde.plasma.bluetooth,org.kde.plasma.brightness,org.kde.plasma.cameraindicator,org.kde.plasma.clipboard,org.kde.plasma.devicenotifier,org.kde.plasma.keyboardindicator,org.kde.plasma.keyboardlayout,org.kde.plasma.manage-inputmethod,org.kde.plasma.mediacontroller,org.kde.plasma.networkmanagement,org.kde.plasma.notifications,org.kde.plasma.printmanager,org.kde.plasma.volume

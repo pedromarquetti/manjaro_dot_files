@@ -3,8 +3,8 @@ _k_friendly_name=Activity Manager
 switch-to-activity-1c7a1160-b699-45c4-95ed-eec98969b826=none,none,Switch to activity "Default"
 
 [KDE Keyboard Layout Switcher]
-Switch to Last-Used Keyboard Layout=,none,Switch to Last-Used Keyboard Layout
-Switch to Next Keyboard Layout=,none,Switch to Next Keyboard Layout
+Switch to Last-Used Keyboard Layout=none,none,Switch to Last-Used Keyboard Layout
+Switch to Next Keyboard Layout=none,none,Switch to Next Keyboard Layout
 _k_friendly_name=Keyboard Layout Switcher
 
 [kaccess]
@@ -263,3 +263,6 @@ _launch=Meta+Volume Down
 
 [services][net.local.spotify.desktop]
 _launch=Meta+Pause
+
+[services][org.kde.plasma-systemmonitor.desktop]
+_launch=none
