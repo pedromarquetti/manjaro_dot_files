@@ -135,9 +135,13 @@ main(){
     cd ~ || exit
     print_cyan "Hi $(whoami), how are you?"
     print_cyan "Let's update everything first..."
-    print_red "pacman might break because of packages to overwrite, if it does, stop the script and run sudo pacman -Syu manually!"
     sudo pacman -Syu yay # i know i put 'yay' in the line below, but pacman was not installing it 
     sudo pacman -Syu  wget curl make python3 yay git base-devel lbzip2 bzip2 
+
+    if [[ ! -x /usr/bin/yay ]]; then
+        sudo pacman -Syu yay # adding this here because pacman wasn't cooperting
+    fi
+
     print_cyan "waiting if user wants to exit or not"
     sleep 10
     print_cyan "Let's install git first"
