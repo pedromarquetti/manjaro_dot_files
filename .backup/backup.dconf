@@ -1,9 +1,42 @@
+[ca/desrt/dconf-editor]
+saved-pathbar-path='l'
+saved-view='/org/gnome/desktop/lockdown/disable-lock-screen'
+show-warning=false
+window-height=665
+window-is-maximized=false
+window-width=978
+
+[org/gnome/Console]
+font-scale=2.4000000000000012
+last-window-maximised=true
+last-window-size=(1132, 768)
+
+[org/gnome/Extensions]
+window-height=749
+window-width=905
+
+[org/gnome/Totem]
+active-plugins=['variable-rate', 'skipto', 'screenshot', 'screensaver', 'save-file', 'rotation', 'recent', 'movie-properties', 'open-directory', 'mpris', 'autoload-subtitles']
+subtitle-encoding='UTF-8'
+
+[org/gnome/calendar]
+active-view='month'
+window-maximized=true
+window-size=(768, 600)
+
 [org/gnome/control-center]
-last-panel='universal-access'
-window-state=(980, 640, false)
+last-panel='display'
+window-state=(1248, 888, false)
+
+[org/gnome/desktop/a11y]
+always-show-universal-access-status=true
 
 [org/gnome/desktop/a11y/applications]
-screen-reader-enabled=true
+screen-magnifier-enabled=false
+screen-reader-enabled=false
+
+[org/gnome/desktop/a11y/magnifier]
+mag-factor=1.0
 
 [org/gnome/desktop/app-folders]
 folder-children=['System', 'Utilities', 'YaST', 'Pardus']
@@ -28,11 +61,28 @@ categories=['X-SuSE-YaST']
 name='suse-yast.directory'
 translate=true
 
+[org/gnome/desktop/background]
+color-shading-type='solid'
+picture-options='zoom'
+picture-uri='file:///usr/share/backgrounds/gnome/map-l.svg'
+picture-uri-dark='file:///usr/share/backgrounds/gnome/map-d.svg'
+primary-color='#241f31'
+secondary-color='#000000'
+
+[org/gnome/desktop/break-reminders/eyesight]
+play-sound=true
+
+[org/gnome/desktop/break-reminders/movement]
+duration-seconds=uint32 300
+interval-seconds=uint32 1800
+play-sound=true
+
 [org/gnome/desktop/input-sources]
 sources=[('xkb', 'br')]
 xkb-options=@as []
 
 [org/gnome/desktop/interface]
+accent-color='slate'
 color-scheme='prefer-dark'
 cursor-size=54
 cursor-theme='breeze_cursors'
@@ -41,8 +91,38 @@ font-name='Noto Sans,  16'
 gtk-theme='Breeze'
 icon-theme='breeze'
 scaling-factor=uint32 1
-text-scaling-factor=1.5
+text-scaling-factor=1.25
 toolbar-style='text'
+toolkit-accessibility=false
+
+[org/gnome/desktop/lockdown]
+disable-lock-screen=false
+
+[org/gnome/desktop/notifications]
+application-children=['org-gnome-console', 'firefox', 'org-gnome-extensions', 'gnome-power-panel', 'discord', 'org-gnome-baobab']
+show-banners=false
+show-in-lock-screen=true
+
+[org/gnome/desktop/notifications/application/discord]
+application-id='discord.desktop'
+
+[org/gnome/desktop/notifications/application/firefox]
+application-id='firefox.desktop'
+
+[org/gnome/desktop/notifications/application/gnome-power-panel]
+application-id='gnome-power-panel.desktop'
+
+[org/gnome/desktop/notifications/application/org-gnome-baobab]
+application-id='org.gnome.baobab.desktop'
+
+[org/gnome/desktop/notifications/application/org-gnome-console]
+application-id='org.gnome.Console.desktop'
+
+[org/gnome/desktop/notifications/application/org-gnome-extensions]
+application-id='org.gnome.Extensions.desktop'
+
+[org/gnome/desktop/peripherals/keyboard]
+numlock-state=true
 
 [org/gnome/desktop/peripherals/mouse]
 speed=0.10000000000000001
@@ -50,8 +130,30 @@ speed=0.10000000000000001
 [org/gnome/desktop/peripherals/touchpad]
 two-finger-scrolling-enabled=true
 
+[org/gnome/desktop/screensaver]
+color-shading-type='solid'
+lock-delay=uint32 30
+lock-enabled=true
+picture-options='zoom'
+picture-uri='file:///usr/share/backgrounds/gnome/map-l.svg'
+primary-color='#241f31'
+secondary-color='#000000'
+
+[org/gnome/desktop/search-providers]
+sort-order=['org.gnome.Settings.desktop', 'org.gnome.Contacts.desktop', 'org.gnome.Nautilus.desktop']
+
+[org/gnome/desktop/session]
+idle-delay=uint32 720
+
 [org/gnome/desktop/sound]
-theme-name='ocean'
+event-sounds=true
+theme-name='__custom'
+
+[org/gnome/desktop/wm/keybindings]
+move-to-workspace-left=['<Alt><Super>h']
+move-to-workspace-right=['<Alt><Super>l']
+switch-to-workspace-left=['<Control><Super>h']
+switch-to-workspace-right=['<Control><Super>l']
 
 [org/gnome/desktop/wm/preferences]
 button-layout='icon:minimize,maximize,close'
@@ -63,24 +165,100 @@ window-size=(1024, 768)
 [org/gnome/evolution-data-server]
 migrated=true
 
+[org/gnome/mutter/wayland/keybindings]
+restore-shortcuts=@as []
+
 [org/gnome/nautilus/preferences]
 default-folder-viewer='icon-view'
 migrated-gtk-settings=true
 search-filter-time-type='last_modified'
 
 [org/gnome/nautilus/window-state]
-initial-size=(890, 550)
+initial-size=(1374, 694)
+
+[org/gnome/settings-daemon/plugins/color]
+night-light-schedule-automatic=false
+
+[org/gnome/settings-daemon/plugins/media-keys]
+custom-keybindings=['/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1/']
+decrease-text-size=['<Super>minus']
+home=['<Super>e']
+increase-text-size=['<Super>equal']
+play=['<Super>Pause']
+screensaver=['<Super>l']
+
+[org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0]
+binding='<Super>AudioRaiseVolume'
+command='spotify playback volume --offset  -- "+10"'
+name='spotify-cli+vol'
+
+[org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1]
+binding='<Super>AudioLowerVolume'
+command='spotify playback volume --offset  -- "-10"'
+name='spotify-cli-vol'
+
+[org/gnome/settings-daemon/plugins/power]
+sleep-inactive-ac-timeout=7200
+sleep-inactive-ac-type='suspend'
 
 [org/gnome/shell]
+command-history=['r']
+disable-user-extensions=true
+disabled-extensions=['dash2dock-lite@icedman.github.com', 'show-desktop-button@amivaleo']
+enabled-extensions=@as []
+favorite-apps=['org.kde.konsole.desktop', 'firefox.desktop', 'org.gnome.Nautilus.desktop', 'org.gnome.Calendar.desktop', 'org.gnome.Software.desktop', 'org.gnome.TextEditor.desktop', 'org.gnome.Calculator.desktop']
+last-selected-power-profile='performance'
 welcome-dialog-last-shown-version='48.4'
+
+[org/gnome/shell/extensions/dash2dock-lite]
+animation-bounce=0.75
+animation-magnify=0.29999999999999999
+animation-rise=0.25
+animation-spread=0.75
+autohide-dash=true
+autohide-dodge=true
+autohide-speed=0.5
+border-radius=3.0
+dock-padding=0.5
+edge-distance=-0.17647058823529416
+icon-size=0.27586206896551724
+icon-spacing=0.58167330677290841
+items-pullout-angle=0.5
+mounted-icon=true
+msg-to-ext=''
+panel-mode=true
+preferred-monitor=0
+pressure-sense=true
+pressure-sense-sensitivity=0.40000000000000002
+running-indicator-style=1
+scroll-sensitivity=0.40000000000000002
+shrink-icons=false
+
+[org/gnome/shell/extensions/show-desktop-button]
+shortcut=['<Super>d']
 
 [org/gnome/shell/world-clocks]
 locations=@av []
 
 [org/gnome/software]
-check-timestamp=int64 1757032839
+check-timestamp=int64 1758990944
 first-run=false
+flatpak-purge-timestamp=int64 1758942559
 
 [org/gtk/gtk4/settings/file-chooser]
-show-hidden=false
+show-hidden=true
 sort-directories-first=false
+
+[org/gtk/settings/file-chooser]
+date-format='regular'
+location-mode='path-bar'
+show-hidden=true
+show-size-column=true
+show-type-column=true
+sidebar-width=257
+sort-column='name'
+sort-directories-first=false
+sort-order='ascending'
+type-format='category'
+window-position=(45, 45)
+window-size=(1920, 945)
