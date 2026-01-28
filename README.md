@@ -1,10 +1,10 @@
 # Welcome to my Manjaro Dotfiles!
 
-This is a collection of my basic config files for my _Manjaro_ env, created with a
-bare git repo that auto-tracks my files (idea from
+This is a collection of my basic config files for my _Manjaro_ env, created with
+a bare git repo that auto-tracks my files (idea from
 [here](https://www.atlassian.com/git/tutorials/dotfiles))
 
-[My Pop OS 22.04 dotfiles](https://github.com/pedromarquetti/pop_dot_files) 
+[My Pop OS 22.04 dotfiles](https://github.com/pedromarquetti/pop_dot_files)
 
 I'll always be adding more stuff
 
@@ -66,6 +66,10 @@ to keep my system up to date
 
 At `.backup` and `.config/Code/Backups/`, there are some configs I use. The
 scripts mentioned above will update these configs
+
+## Common Files
+
+I separated common files between all my dotfiles, they can be found [here](https://github.com/pedromarquetti/dotfiles-common) 
 
 ## Extensions
 
