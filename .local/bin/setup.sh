@@ -44,6 +44,10 @@ install_zsh(){
     fi
 }
 
+config_common(){ # alias used to make it easier to work with these files
+    /usr/bin/git --git-dir="$HOME/.cfg-common/" --work-tree="$HOME" "$@"
+}
+
 config(){ # alias used to make it easier to work with these files
     /usr/bin/git --git-dir="$HOME/.cfg/" --work-tree="$HOME" "$@"
 }
@@ -99,7 +103,7 @@ function install_misc(){
     cd /tmp/ && git clone https://github.com/aome510/spotify-player && cd spotify-player && cargo install spotify-player --features notify,daemon,fzf  
 
     if [[ -f $HOME/.cargo/bin/spotify_player ]]; then
-        mv $HOME/.cargo/bin/spotify_player $HOME/.local/bin/spotify
+        mv "$HOME"/.cargo/bin/spotify_player "$HOME"/.local/bin/spotify
     fi
 }
 
@@ -172,7 +176,18 @@ main(){
     sleep 20
     print_green "ok, continuing..."
     setup_env &&
+
     print_cyan "ok, getting my config files"
+
+    print_cyan "Getting Common files"
+
+    git clone --bare https://github.com/pedromarquetti/dotfiles-common.git "$HOME"/.cfg-common &&
+
+    print_cyan "checking out common files"
+    config_common checkout &&
+    config_common config status.showUntrackedFiles no &&
+
+    print_cyan "Cloning distro config"
     git clone --bare https://github.com/pedromarquetti/manjaro_dot_files.git "$HOME"/.cfg && 
 
     print_green "Done, Running checkout"
@@ -188,7 +203,9 @@ main(){
     config checkout &&
 
     config config status.showUntrackedFiles no && 
+
     chsh -s /bin/zsh
+
     print_yellow "change shell with chsh -s /bin/zsh, then login again!"
     print_yellow "for some reason, if i run chsh from here, the shell does not change"
 
