@@ -1,7 +1,0 @@
-{
-	"Handle Error": {
-		"prefix": "iferr",
-		"body": ["if err != nil {", "\t$0", "}"],
-		"description": "Handle Error"
-	}
-}
