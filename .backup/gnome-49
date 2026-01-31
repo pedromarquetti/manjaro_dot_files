@@ -7,7 +7,7 @@ window-is-maximized=false
 window-width=1111
 
 [org/gnome/Console]
-font-scale=1.6000000000000003
+font-scale=1.3
 last-window-maximised=true
 last-window-size=(360, 294)
 use-system-font=false
@@ -15,6 +15,14 @@ use-system-font=false
 [org/gnome/Extensions]
 window-height=885
 window-width=1147
+
+[org/gnome/TextEditor]
+custom-font='Hack Nerd Font 11'
+highlight-current-line=true
+show-line-numbers=true
+style-scheme='Adwaita-dark'
+tab-width=uint32 4
+use-system-font=false
 
 [org/gnome/Totem]
 active-plugins=['variable-rate', 'skipto', 'screenshot', 'screensaver', 'save-file', 'rotation', 'recent', 'movie-properties', 'open-directory', 'mpris', 'autoload-subtitles']
@@ -28,6 +36,8 @@ window-size=(1371, 805)
 first-run=false
 view='icon-view'
 window-maximized=true
+window-position=[26, 23]
+window-size=[768, 600]
 
 [org/gnome/calculator]
 base=10
@@ -50,12 +60,13 @@ panel-id='world'
 size=(870, 690)
 
 [org/gnome/control-center]
-last-panel='system'
+last-panel='keyboard'
 window-state=(1506, 888, false)
 
 [org/gnome/deja-dup]
 backend='google'
-prompt-check='2025-11-27T23:15:18.040870Z'
+periodic-timestamp='2025-12-09T19:52:55.174546-03'
+prompt-check='2026-01-27T17:57:24.112412-03'
 
 [org/gnome/desktop/a11y]
 always-show-universal-access-status=true
@@ -152,7 +163,7 @@ toolkit-accessibility=false
 disable-lock-screen=false
 
 [org/gnome/desktop/notifications]
-application-children=['org-gnome-console', 'firefox', 'org-gnome-extensions', 'gnome-power-panel', 'discord', 'org-gnome-baobab', 'org-gnome-nautilus', 'heroic', 'org-manjaro-pamac-manager', 'hydralauncher', 'org-gnome-dejadup', 'alacritty', 'org-gnome-boxes', 'io-github-nozwock-packet']
+application-children=['org-gnome-console', 'firefox', 'org-gnome-extensions', 'gnome-power-panel', 'discord', 'org-gnome-baobab', 'org-gnome-nautilus', 'heroic', 'org-manjaro-pamac-manager', 'hydralauncher', 'org-gnome-dejadup', 'alacritty', 'org-gnome-boxes', 'io-github-nozwock-packet', 'gnome-about-panel', 'org-gnome-evolution-alarm-notify', 'onlyoffice-desktopeditors', 'timeshift-gtk', 'org-gnome-characters']
 show-banners=false
 show-in-lock-screen=true
 
@@ -164,6 +175,9 @@ application-id='discord.desktop'
 
 [org/gnome/desktop/notifications/application/firefox]
 application-id='firefox.desktop'
+
+[org/gnome/desktop/notifications/application/gnome-about-panel]
+application-id='gnome-about-panel.desktop'
 
 [org/gnome/desktop/notifications/application/gnome-power-panel]
 application-id='gnome-power-panel.desktop'
@@ -177,17 +191,26 @@ application-id='hydralauncher.desktop'
 [org/gnome/desktop/notifications/application/io-github-nozwock-packet]
 application-id='io.github.nozwock.Packet.desktop'
 
+[org/gnome/desktop/notifications/application/onlyoffice-desktopeditors]
+application-id='onlyoffice-desktopeditors.desktop'
+
 [org/gnome/desktop/notifications/application/org-gnome-baobab]
 application-id='org.gnome.baobab.desktop'
 
 [org/gnome/desktop/notifications/application/org-gnome-boxes]
 application-id='org.gnome.Boxes.desktop'
 
+[org/gnome/desktop/notifications/application/org-gnome-characters]
+application-id='org.gnome.Characters.desktop'
+
 [org/gnome/desktop/notifications/application/org-gnome-console]
 application-id='org.gnome.Console.desktop'
 
 [org/gnome/desktop/notifications/application/org-gnome-dejadup]
 application-id='org.gnome.DejaDup.desktop'
+
+[org/gnome/desktop/notifications/application/org-gnome-evolution-alarm-notify]
+application-id='org.gnome.Evolution-alarm-notify.desktop'
 
 [org/gnome/desktop/notifications/application/org-gnome-extensions]
 application-id='org.gnome.Extensions.desktop'
@@ -197,6 +220,9 @@ application-id='org.gnome.Nautilus.desktop'
 
 [org/gnome/desktop/notifications/application/org-manjaro-pamac-manager]
 application-id='org.manjaro.pamac.manager.desktop'
+
+[org/gnome/desktop/notifications/application/timeshift-gtk]
+application-id='timeshift-gtk.desktop'
 
 [org/gnome/desktop/peripherals/keyboard]
 numlock-state=true
@@ -229,6 +255,8 @@ theme-name='__custom'
 [org/gnome/desktop/wm/keybindings]
 close=['<Alt>F4']
 maximize=@as []
+move-to-monitor-left=['<Super><Shift>Left', '<Super><Shift>h']
+move-to-monitor-right=['<Super><Shift>Right', '<Super><Shift>l']
 move-to-workspace-1=@as []
 move-to-workspace-2=@as []
 move-to-workspace-3=@as []
@@ -251,6 +279,9 @@ window-size=(1024, 768)
 
 [org/gnome/evolution-data-server]
 migrated=true
+
+[org/gnome/evolution-data-server/calendar]
+reminders-past=['593a9e80347448d1653a9e90862aca89f4b55601\ne641f58150204812bab3c0a8c7df116113a27491\t20260207\n1769850000\n1770422400\n1770595200\nBEGIN:VEVENT\r\nDTSTART;VALUE=DATE:20260207\r\nDTEND;VALUE=DATE:20260209\r\nDTSTAMP:20260103T235452Z\r\nUID:\r\n chh3ac9l6oqj4bb5c9hm8b9k6sp3eb9p70o62b9ic9hj2dr36hi6aeb26c@google.com\r\nCREATED:20260103T235452Z\r\nX-LIC-ERROR;X-LIC-ERRORTYPE=VALUE-PARSE-ERROR:No value for DESCRIPTION \r\n property. Removing entire property:\r\nLAST-MODIFIED:20260103T235452Z\r\nX-LIC-ERROR;X-LIC-ERRORTYPE=VALUE-PARSE-ERROR:No value for LOCATION \r\n property. Removing entire property:\r\nSEQUENCE:0\r\nSTATUS:CONFIRMED\r\nSUMMARY:Beico dei\r\nTRANSP:TRANSPARENT\r\nX-EVOLUTION-CALDAV-ETAG:63903167692\r\nBEGIN:VALARM\r\nACTION:DISPLAY\r\nDESCRIPTION:This is an event reminder\r\nTRIGGER:-PT15H\r\nX-EVOLUTION-ALARM-UID:8c277744047ffbeed3b930f5a3f862cd254ab332\r\nEND:VALARM\r\nBEGIN:VALARM\r\nACTION:DISPLAY\r\nDESCRIPTION:This is an event reminder\r\nTRIGGER:-P6DT15H\r\nX-EVOLUTION-ALARM-UID:e641f58150204812bab3c0a8c7df116113a27491\r\nEND:VALARM\r\nEND:VEVENT\r\n', '593a9e80347448d1653a9e90862aca89f4b55601\nd095402779e6a59e2b0ad4865750fe840d63002b\t20260127\n1769504400\n1769472000\n1769558400\nBEGIN:VEVENT\r\nDTSTART;VALUE=DATE:20260127\r\nDTEND;VALUE=DATE:20260128\r\nRRULE:FREQ=YEARLY;BYMONTHDAY=27;BYMONTH=1\r\nDTSTAMP:20230130T215013Z\r\nUID:b100000617106042@facebook.com\r\nCLASS:PUBLIC\r\nCREATED:20170731T141200Z\r\nX-LIC-ERROR;X-LIC-ERRORTYPE=VALUE-PARSE-ERROR:No value for DESCRIPTION \r\n property. Removing entire property:\r\nLAST-MODIFIED:20230130T215013Z\r\nX-LIC-ERROR;X-LIC-ERRORTYPE=VALUE-PARSE-ERROR:No value for LOCATION \r\n property. Removing entire property:\r\nSEQUENCE:0\r\nSTATUS:CONFIRMED\r\nSUMMARY:Aniversário de Gabriel Ferrazzo\r\nTRANSP:TRANSPARENT\r\nX-LIC-ERROR;X-LIC-ERRORTYPE=VALUE-PARSE-ERROR:No value for LOCATION \r\n property. Removing entire property:\r\nX-MICROSOFT-CDO-BUSYSTATUS:FREE\r\nX-EVOLUTION-CALDAV-ETAG:63810798613\r\nRECURRENCE-ID;VALUE=DATE:20260127\r\nBEGIN:VALARM\r\nACTION:DISPLAY\r\nDESCRIPTION:This is an event reminder\r\nTRIGGER:PT9H\r\nX-EVOLUTION-ALARM-UID:d095402779e6a59e2b0ad4865750fe840d63002b\r\nEND:VALARM\r\nBEGIN:VALARM\r\nACTION:DISPLAY\r\nDESCRIPTION:This is an event reminder\r\nTRIGGER:-PT15H\r\nX-EVOLUTION-ALARM-UID:0f4a35f0b7c88c1881ef7240bd1eb708e4240b4b\r\nEND:VALARM\r\nEND:VEVENT\r\n', '593a9e80347448d1653a9e90862aca89f4b55601\n0f4a35f0b7c88c1881ef7240bd1eb708e4240b4b\t20260127\n1769418000\n1769472000\n1769558400\nBEGIN:VEVENT\r\nDTSTART;VALUE=DATE:20260127\r\nDTEND;VALUE=DATE:20260128\r\nRRULE:FREQ=YEARLY;BYMONTHDAY=27;BYMONTH=1\r\nDTSTAMP:20230130T215013Z\r\nUID:b100000617106042@facebook.com\r\nCLASS:PUBLIC\r\nCREATED:20170731T141200Z\r\nX-LIC-ERROR;X-LIC-ERRORTYPE=VALUE-PARSE-ERROR:No value for DESCRIPTION \r\n property. Removing entire property:\r\nLAST-MODIFIED:20230130T215013Z\r\nX-LIC-ERROR;X-LIC-ERRORTYPE=VALUE-PARSE-ERROR:No value for LOCATION \r\n property. Removing entire property:\r\nSEQUENCE:0\r\nSTATUS:CONFIRMED\r\nSUMMARY:Aniversário de Gabriel Ferrazzo\r\nTRANSP:TRANSPARENT\r\nX-LIC-ERROR;X-LIC-ERRORTYPE=VALUE-PARSE-ERROR:No value for LOCATION \r\n property. Removing entire property:\r\nX-MICROSOFT-CDO-BUSYSTATUS:FREE\r\nX-EVOLUTION-CALDAV-ETAG:63810798613\r\nRECURRENCE-ID;VALUE=DATE:20260127\r\nBEGIN:VALARM\r\nACTION:DISPLAY\r\nDESCRIPTION:This is an event reminder\r\nTRIGGER:PT9H\r\nX-EVOLUTION-ALARM-UID:d095402779e6a59e2b0ad4865750fe840d63002b\r\nEND:VALARM\r\nBEGIN:VALARM\r\nACTION:DISPLAY\r\nDESCRIPTION:This is an event reminder\r\nTRIGGER:-PT15H\r\nX-EVOLUTION-ALARM-UID:0f4a35f0b7c88c1881ef7240bd1eb708e4240b4b\r\nEND:VALARM\r\nEND:VEVENT\r\n']
 
 [org/gnome/file-roller/dialogs/extract]
 height=800
@@ -326,17 +357,17 @@ search-filter-time-type='last_modified'
 
 [org/gnome/nautilus/window-state]
 initial-size=(1374, 694)
-initial-size-file-chooser=(1569, 910)
+initial-size-file-chooser=(1598, 910)
 maximized=true
 
 [org/gnome/portal/filechooser/Alacritty]
 last-folder-path='/home/phlm/Downloads'
 
 [org/gnome/portal/filechooser/heroic]
-last-folder-path='/home/phlm/Games/Cyberpunk 2077/bin/x64'
+last-folder-path='/home/phlm/Games/downloads/Satisfactory [FitGirl Repack]'
 
 [org/gnome/portal/filechooser/hydralauncher]
-last-folder-path='/home/phlm/Games'
+last-folder-path='/home/phlm/Games/Cyberpunk 2077/bin/x64'
 
 [org/gnome/portal/filechooser/io.github.nozwock.Packet]
 last-folder-path='/home/phlm/Documents/programming/python/spotify-analyser'
@@ -350,6 +381,9 @@ last-folder-path='/home/phlm/.vbox/isos'
 [org/gnome/settings-daemon/plugins/color]
 night-light-schedule-automatic=false
 
+[org/gnome/settings-daemon/plugins/housekeeping]
+donation-reminder-last-shown=int64 1765324676929629
+
 [org/gnome/settings-daemon/plugins/media-keys]
 custom-keybindings=['/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom2/']
 decrease-text-size=['<Super>minus']
@@ -360,12 +394,12 @@ screensaver=['<Super>l']
 
 [org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0]
 binding='<Super>AudioRaiseVolume'
-command='spotify playback volume --offset  -- "+10"'
+command='spotify playback volume --offset  -- "+5"'
 name='spotify-cli+vol'
 
 [org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1]
 binding='<Super>AudioLowerVolume'
-command='spotify playback volume --offset  -- "-10"'
+command='spotify playback volume --offset  -- "-5"'
 name='spotify-cli-vol'
 
 [org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom2]
